@@ -1,0 +1,12 @@
+venv/
+output/
+pdf/
+.DS_Store
+__pycache__/
+*.pyc
+.claude/
+
+# Personal notes
+boards.md
+extra.txt
+projects.txt

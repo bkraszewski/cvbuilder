@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>{{ meta.name }}</h1>
+        <p class="contact">
+            {{ meta.location }}
+            &ensp;|&ensp;
+            {{ meta.phone }}
+            &ensp;|&ensp;
+            <a href="mailto:{{ meta.email }}">{{ meta.email }}</a>
+        </p>
+        <p class="links">
+            {% if meta.linkedin %}<a href="https://{{ meta.linkedin }}">{{ meta.linkedin }}</a>{% endif %}
+            {% if meta.github %}
+                {% for gh in meta.github %}
+                    &ensp;|&ensp; <a href="https://{{ gh }}">{{ gh }}</a>
+                {% endfor %}
+            {% endif %}
+        </p>
+    </header>
+    <main>
+        {{ content | safe }}
+    </main>
+</body>
+</html>
