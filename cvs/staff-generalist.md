@@ -25,7 +25,7 @@ github:
 **Infrastructure:** Docker, GitHub Actions, Google Cloud, AWS Cognito, Firebase, Auth0
 **Databases:** MongoDB, PostgreSQL, SQL Server, SQLite, Firestore
 **Architecture:** Clean Architecture, Microservices, Modular Monolith, MVVM, Event-Driven, Strategy Pattern
-**AI & Data:** OpenAI API, context engineering, prompt design, scikit-learn, pandas, classification pipelines
+**AI & Data:** OpenAI API, Gemini API, context engineering, prompt design, scikit-learn, pandas, classification pipelines
 **AI Tooling:** AI-assisted development (Claude Code, Cursor, Copilot), prompt engineering for developer workflows
 
 ## Professional Experience
@@ -56,14 +56,15 @@ github:
 *September 2019 — Present*
 
 - Accepted into Toptal's top 3% talent network as a freelance software engineer
-- **Monarch** — Contributed to a developer tooling project for building, testing, and debugging UI components in isolation (Dart, native code)
-- **Hypothesis** — Engineered a full-stack social app for sharing hypotheses and predictions (Flutter frontend, Firebase + Cloud Functions backend)
-- **TwelveFixes** — Developed a full-stack habit-tracking app (Flutter, Firebase, Cloud Functions serverless backend)
+- **Monarch** — Contributed to an open-source developer tooling library for building, testing, and debugging Flutter UI components in isolation. Worked on API design and documentation (Dart, platform channels)
+- **Hypothesis** — Engineered a full-stack social platform for sharing hypotheses and predictions — Flutter frontend with real-time Firestore sync, Firebase Cloud Functions backend, push notifications, and social graph features
+- **TwelveFixes** — Developed a full-stack habit-tracking app with streak logic, analytics dashboards, and a serverless backend (Flutter, Firebase, Cloud Functions)
 
 ### SoftwareHut — Tech Lead
 *April 2016 — December 2020*
 
 - Led distributed engineering team building complex multi-flavor health and fitness applications
+- Built BLE pulse oximeter integration for the Polish Ministry of Health during COVID — native Kotlin/Swift platform channels, shipped in ~1 week, received ministerial acknowledgment
 - Drove architecture modernization: introduced multi-module codebase, modern design patterns (MVP → MVVM), and cross-platform development strategy
 - Managed the engineering department — recruiting, mentoring 10+ engineers, project estimation, and sales support
 - Presented at conferences across Europe (Droidcon London, Vienna, Krakow, Italy)
@@ -86,17 +87,24 @@ github:
 - Designed a 160-line system prompt with priority-based task selection rules, frequency spacing constraints, and a built-in validation checklist — reducing hallucinated outputs through context engineering
 - Shipped production-ready: 144+ automated tests, 17+ analytics events, execution locking for concurrency, and a multi-provider AI adapter pattern (OpenAI + Gemini-ready)
 
-### Rapfin — AI Financial Summarizer
-**TypeScript, OpenAI API, Node.js, MongoDB, Auth0, Google Cloud**
+### ScrollMind — AI Education Platform
+**TypeScript, Flutter, Firebase, Gemini Flash API**
+*scrollmind.ai*
 
-- Built an AI platform for summarizing financial statements of Polish stock exchange companies using OpenAI's LLMs
-- Extracted structured data from PDFs, built summarization pipelines, and exposed results via a web interface
+- Solo-built an AI-powered learning platform with scroll-feed UX, AI tutor with context engineering, XP/progression system, and simulated community engagement layer
+- Designed prompt architecture for Gemini Flash tutor — context-aware responses grounded in course material with guardrails against off-topic drift and hallucination
+- Shipped to production with 350+ users, paid course marketplace, automated onboarding sequences, and full Firebase backend (Auth, Firestore, Cloud Functions, Analytics)
 
 ### ReMojo — Content Blocking Platform
 **Kotlin, Firebase, Node.js**
 
 - Owned end-to-end development of a commercial content-blocking app — from initial proof of concept to production
-- Architected Android client with on-device classification logic and serverless backend with Firebase and Node.js
+- Architected Android client with on-device TensorFlow classification logic and serverless backend with Firebase and Node.js
+
+### Rapfin — AI Financial Summarizer
+**TypeScript, OpenAI API, Node.js, MongoDB, Auth0, Google Cloud**
+
+- Built an AI-powered tool for summarizing financial statements of Polish stock exchange companies using LLM pipelines and structured PDF extraction
 
 ## Education
 
